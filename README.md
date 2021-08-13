@@ -1,10 +1,10 @@
 # Projeto Portfólio do Desenvolvedor
 
-Este site é criado com o intuito de apresentar-me como desenvolvedor. Seu principal foco é mostrar todos os meus projetos, desde os mais simples de quando ainda estava engatinhando, até os saindo do forno.
+Projeto criado com intuito de aprender novas técnicas de front-end, tendo como foco o profissionalismo.
 
 ## Ícones
 
 - :package: Nova funcionalidade
 - :up: Atualização
-- :beetle: Correção de bug
+- :bug: Correção de bug
 - :checkered_flag: Release

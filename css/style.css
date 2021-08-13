@@ -1,0 +1,128 @@
+/* fontes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* variaveis */
+:root{
+    --header-height:3.6rem;
+
+    /* cores */
+    --gui-cor: 250; /* 250,142,230,340 */
+
+    /* Experimentando modo de cores hsl */
+    --primeira-cor: hsl(var(--gui-cor), 69%, 61%);
+    --primeira-cor-secun: hsl(var(--gui-cor), 69%, 61%);
+    --primeira-cor-alt: hsl(var(--gui-cor), 57%, 53%);
+    --primeira-cor-clara: hsl(var(--gui-cor), 92%, 85%);
+    --titulo-cor: hsl(var(--gui-cor), 8%, 15%);
+    --texto-cor: hsl(var(--gui-cor), 8%, 45%);
+    --texto-cor-clara: hsl(var(--gui-cor), 8%, 65%);
+    --input-cor: hsl(var(--gui-cor), 70%, 96%);
+    --body-cor: hsl(var(--gui-cor), 69%, 99%);
+    --container-cor: white;
+
+    /* fontes e tipografia */
+    --body-font: 'Poppins', sans-serif;;
+
+    --grande-font-size: 2rem;
+    --h1-font-size:1.5rem;
+    --h2-font-size:1.25rem;
+    --h3-font-size:1.125rem;
+    --normal-font-size: .938rem;
+    --pequeno-font-size: 813rem;
+    --menor-font-size:  .75rem;
+
+    /* peso da fonte */
+    --fonte-medio: 500;
+    --fonte-pesada: 600;
+
+    /* margens para baixo */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /* z-index */
+    --z-tooltip:10;
+    --z-fixed:100;
+    --z-modal:1000;
+}
+
+/* tamanho de fonte para dispositivos maiores */
+@media screen and (min-width:968px){
+    :root{
+        /* 10px = 1rem , 1.5rem = 15px, 2rem = 20px */
+        --grande-font-size: 3rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --pequeno-font-size: .875rem;
+        --menor-font-size:  .813rem;
+    }
+}
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0 0 var(--header-height) 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-cor);
+    color: var(--texto-cor);
+}
+h1,h2,h3,h4{
+    color: var(--titulo-cor);
+    font-weight: var(--fonte-pesada);
+}
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* classes reusáveis */
+
+.section{
+    padding: 2rem 0 4rem;
+}
+.section__title{
+    font-size: var(--h1-font-size);
+}
+.section__subtitle{
+    display: block;
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-3);
+}
+.section__title,
+.section__subtitle{
+    text-align: center;
+}
+
+/* layout */
+.container{
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
