@@ -291,3 +291,37 @@ img{
     display: inline-flex;
     align-items: center;
 }
+
+/* sobre */
+.sobre__img{
+    width: 200px;
+    border-radius: .5rem;
+    justify-self: center;
+    align-self: center;
+}
+.sobre__descricao{
+    text-align: center;
+    margin-bottom: var(--mb-2-5);
+}
+.sobre__info{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2-5);
+}
+.sobre__info-title{
+    font-size: var(--h2-font-size);
+    font-weight: var(--fonte-pesada);
+    color: var(--titulo-cor);
+}
+.sobre__info-nome{
+    font-size: var(--menor-font-size);
+}
+.sobre__info-title,
+.sobre__info-nome{
+    display: block;
+    text-align: center;
+}
+.sobre__buttons{
+    display: flex;
+    justify-content: center;
+}
