@@ -24,7 +24,7 @@ navlink.forEach(e=>{e.addEventListener('click',linkAction)});
 
 /* Habilidades */
 const habilidadesContent = document.getElementsByClassName("habilidades__content"),
-      habilidadesHeader =  document.querySelectorAll("habilidades__header");
+      habilidadesHeader =  document.querySelectorAll(".habilidades__header");
 
 function toggleHabilidade(){
     let itemClass = this.parentNode.className;
