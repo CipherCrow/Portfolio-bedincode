@@ -424,3 +424,60 @@ img{
 .habilidades__aberto .habilidades__arrow{
     transform: rotate(-180deg);
 }
+
+/* qualificacoes */
+.qualificacao__tabs{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: var(--mb-2);
+}
+.qualificacao__button{
+    font-size: var(--h3-font-size);
+    font-weight: var(--fonte-medio);
+    cursor: pointer;
+}
+.qualificacao__button:hover{
+    color: var(--primeira-cor);
+}
+.qualificacao__icon{
+    font-size: 1.8rem;
+    margin-right: var(--mb-0-25);
+}
+.qualificacao__data{
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+.qualificacao__title{
+    font-size: var(--normal-font-size);
+    font-weight: var(--fonte-medio);
+}
+.qualificacao__subtitle{
+    display: inline-block;
+    font-size: var(--pequeno-font-size);
+    margin-bottom: var(--mb-1);
+}
+.qualificacao__calendar{
+    font-size: var(--menor-font-size);
+    color: var(--texto-cor-clara);
+}
+.qualificacao__rounder{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--primeira-cor);
+    border-radius: 50%;
+}
+.qualificacao__line{
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--primeira-cor);
+    transform: translate(6px, -7px);
+}
+.qualificacao [data-content]{
+    display: none;
+}
+.qualificacao__active[data-content]{
+    display: block;
+}

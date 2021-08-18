@@ -38,3 +38,23 @@ function toggleHabilidade(){
 habilidadesHeader.forEach((el) =>{
     el.addEventListener('click',toggleHabilidade);
 })
+
+/* Qualificacão */
+const tabs = document.querySelectorAll('[data-target]'),
+      tabContent = document.querySelectorAll('[data-content]');
+
+tabs.forEach(tab =>{
+    tab.addEventListener('click',()=>{
+        const target = document.querySelector(tab.dataset.target)
+
+        tabContent.forEach(tabContent =>{
+            tabContent.classList.remove("qualificacao__active")
+        })
+        target.classList.add('qualificacao__active');
+
+        tabs.forEach(tab=>{
+            tab.classList.remove('qualificacao__active')
+        })
+        tab.classList.add('qualificacao__active')
+    })
+})
