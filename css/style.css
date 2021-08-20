@@ -287,6 +287,13 @@ img{
     margin-left: var(--mb-0-5);
     transition: .3s;
 }
+.button--white{
+    background-color: white;
+    color: var(--primeira-cor);
+}
+.button--white:hover{
+    background-color: white;
+}
 .button--flex{
     display: inline-flex;
     align-items: center;
@@ -628,4 +635,28 @@ img{
 .swiper-button-prev,
 .swiper-pagination-bullet{
     outline: none;
+}
+
+/* projeto*/
+.projeto{
+    text-align: center;
+}
+.projeto__bg{
+    background-color: var(--primeira-cor-secun);
+    padding-top: 3rem;
+}
+.projeto__title{
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+.projeto__description{
+    margin-bottom: var(--mb-1-5);
+}
+.projeto__title,
+.projeto__description{
+    color: white;
+}
+.projeto__img{
+    width: 232px;
+    justify-self: center;
 }
