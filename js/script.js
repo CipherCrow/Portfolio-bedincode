@@ -58,3 +58,25 @@ tabs.forEach(tab =>{
         tab.classList.add('qualificacao__active')
     })
 })
+
+//janela modal
+const   modalViews = document.querySelectorAll('.servicos__modal'),
+        modalBtns  = document.querySelectorAll('.servicos__button'),
+        modalCloses= document.querySelectorAll('.servicos__modal-close');
+
+let modal = function(modalClick){
+    modalViews[modalClick].classList.add('active-modal');
+}
+
+modalBtns.forEach((modalBtn,i) => {
+    modalBtn.addEventListener('click',()=>{
+        modal(i);
+    })
+})
+modalCloses.forEach((modalClose)=>{
+    modalClose.addEventListener('click',()=>{
+        modalViews.forEach((modalView) =>{
+            modalView.classList.remove('active-modal');
+        })
+    })
+})
