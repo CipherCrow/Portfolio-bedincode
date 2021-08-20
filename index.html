@@ -13,8 +13,9 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">	
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Portfólio de Desenvolvedor</title>
 </head>
@@ -626,8 +627,80 @@
                  </div> <!-- servicos 3 -->
              </div>
          </section>
+
+         <!-- portfolio -->
+         <section class="section portfolio" id="portfolio">
+             <h2 class="section__title">Portfólio</h2>
+             <span class="section__subtitle">Trabalhos mais recentes</span>
+
+             <div class="portfolio__container container swiper-container">
+                 <div class="swiper-wrapper">
+                     <!-- portfolio 1 -->
+                     <div class="portfolio__content grid swiper-slide">
+                         <img src="images/portfolio1.jpg" alt="Portfólio 1" class="portfolio__img">
+
+                         <div class="portfolio__data">
+                             <h3 class="portfolio__title">Website Moderno</h3>
+                             <p class="portfolio__description">
+                                 Website adaptado para todos os dispositivos, com componentes Ui e animações interativas.
+                             </p>
+                             <a href="#" class="button button--flex button--small portfolio__button">
+                                 Demo
+                                 <i class="fas fa-arrow-right button__icon"></i>
+                             </a>
+                         </div>
+                     </div> <!-- portfolio 1 -->
+
+                     <!-- portfolio 2 -->
+                     <div class="portfolio__content grid swiper-slide">
+                         <img src="images/portfolio2.jpg" alt="Portfólio 2" class="portfolio__img">
+
+                         <div class="portfolio__data">
+                             <h3 class="portfolio__title">Design de esqueleto</h3>
+                             <p class="portfolio__description">
+                                 Website adaptado para todos os dispositivos, com componentes Ui e animações interativas.
+                             </p>
+                             <a href="#" class="button button--flex button--small portfolio__button">
+                                 Demo
+                                 <i class="fas fa-arrow-right button__icon"></i>
+                             </a>
+                         </div>
+                     </div> <!-- portfolio 2 -->
+
+                     <!-- portfolio 3 -->
+                     <div class="portfolio__content grid swiper-slide">
+                         <img src="images/portfolio3.jpg" alt="Portfólio 3" class="portfolio__img">
+
+                         <div class="portfolio__data">
+                             <h3 class="portfolio__title">loja Online</h3>
+                             <p class="portfolio__description">
+                                 Website adaptado para todos os dispositivos, com componentes Ui e animações interativas.
+                             </p>
+                             <a href="#" class="button button--flex button--small portfolio__button">
+                                 Demo
+                                 <i class="fas fa-arrow-right button__icon"></i>
+                             </a>
+                         </div>
+                     </div> <!-- portfolio 3 -->
+                 </div>
+
+                 <!-- setas -->
+                    <div class="swiper-button-next">
+                        <i class="fas fa-angle-right swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="fas fa-angle-left swiper-portfolio-icon"></i>
+                    </div>
+
+                    <!-- paginacao -->
+                    <div class="swiper-pagination"></div>
+             </div>
+         </section>
     </main>
 
+    <!-- swiper js -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- script -->
     <script src="js/script.js"></script>
 </body>
 </html>
