@@ -660,3 +660,36 @@ img{
     width: 232px;
     justify-self: center;
 }
+
+/* testemunho */
+.testemunho__data,
+.testemunho__header{
+    display: flex;
+}
+.testemunho__data{
+    justify-content: space-between;
+    margin-bottom: var(--mb-1);
+}
+.testemunho__img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: var(--mb-0-75);
+}
+.testemunho__name{
+    font-size: var(--h3-font-size);
+    font-weight: var(--fonte-medio);
+}
+.testemunho__client{
+    font-size: var(--pequeno-font-size);
+    color: var(--texto-cor-clara);
+}
+.testemunho__description{
+    margin-bottom: var(--mb-2-5);
+}
+.testemunho__icon-star{
+    color: var(--primeira-cor);
+}
+.swiper-container .swiper-pagination-testemunho{
+    bottom: 0;
+}
