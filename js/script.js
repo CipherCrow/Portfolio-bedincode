@@ -138,3 +138,10 @@ function scrollHeader(){
     if(this.scrollY >= 80) nav.classList.add('show-scroll'); else nav.classList.remove('show-scroll');
 }
 window.addEventListener('scroll',scrollHeader);
+
+/* mostrar scroll top*/
+function scrollup(){
+    const scrollup = document.getElementById('scroll-up');
+    if(this.scrollY >= 560) scrollup.classList.add('show-scrollup'); else scrollup.classList.remove('show-scrollup');
+}
+window.addEventListener('scroll',scrollup);
