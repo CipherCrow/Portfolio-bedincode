@@ -111,3 +111,23 @@ let swiperTestemunho = new Swiper('.testemunho__container',{
         }
     }
 });
+
+/* ativar o scroll para o todo */
+const sections = document.querySelectorAll("section[id]");
+
+function scrollActive(){
+    const scrollY = window.pageYOffset;
+
+    sections.forEach( atual => {
+        const sectionHeight = atual.offsetHeight;
+        const sectionTop    = atual.offsetTop - 50;
+        let sectionId = atual.getAttribute('id');
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link');
+        } else{
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link');
+        }
+    })
+}
+window.addEventListener('scroll',scrollActive);

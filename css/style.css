@@ -200,6 +200,12 @@ img{
 .nav__close:hover{
     color: var(--primeira-cor-alt);
 }
+
+/* link ativo */
+.active-link{
+    color: var(--primeira-cor);
+}
+
 /* mostrar menu */
 .mostrar-menu{
     bottom: 0;
