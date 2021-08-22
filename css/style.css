@@ -19,6 +19,8 @@
     --input-cor: hsl(var(--gui-cor), 70%, 96%);
     --body-cor: hsl(var(--gui-cor), 69%, 99%);
     --container-cor: white;
+    --scroll-bar-cor: hsl(var(--gui-cor), 12%, 90%);
+    --scroll-pressionada-cor: hsl(var(--gui-cor), 12%, 80%);
 
     /* fontes e tipografia */
     --body-font: 'Poppins', sans-serif;;
@@ -72,6 +74,8 @@ body.dark-theme{
     --input-cor: hsl(var(--gui-cor), 29%, 16%);
     --body-cor: hsl(var(--gui-cor), 28%, 12%);
     --container-cor: hsl(var(--gui-cor), 29%, 16%);
+    --scroll-bar-cor: hsl(var(--gui-cor), 12%, 48%);
+    --scroll-pressionada-cor: hsl(var(--gui-cor), 12%, 36%);
 }
 
 /* Botão dark light */
@@ -839,4 +843,18 @@ img{
 /* mostrar scroll */
 .show-scrollup{
     bottom: 5rem;
+}
+
+/* scroll bar */
+::-webkit-scrollbar{
+    width: .60rem;
+    background-color: var(--scroll-bar-cor);
+    border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--scroll-pressionada-cor);
+    border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--texto-cor-clara);
 }
