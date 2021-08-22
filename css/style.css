@@ -64,6 +64,30 @@
         --menor-font-size:  .813rem;
     }
 }
+/* variaveis tema escuro */
+body.dark-theme{
+    --primeira-cor-secun: hsl(var(--gui-cor), 30%, 8%);
+    --titulo-cor: hsl(var(--gui-cor), 8%, 95%);
+    --texto-cor: hsl(var(--gui-cor), 8%, 75%);
+    --input-cor: hsl(var(--gui-cor), 29%, 16%);
+    --body-cor: hsl(var(--gui-cor), 28%, 12%);
+    --container-cor: hsl(var(--gui-cor), 29%, 16%);
+}
+
+/* Botão dark light */
+.nav__btns{
+    display: flex;
+    align-items: center;
+}
+.mudar-tema{
+    font-size: 1.25rem;
+    color: var(--titulo-cor);
+    margin-right: var(--mb-1);
+    cursor: pointer;
+}
+.mudar-tema:hover{
+    color: var(--primeira-cor);
+}
 
 /* reset */
 *{

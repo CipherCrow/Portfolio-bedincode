@@ -145,3 +145,13 @@ function scrollup(){
     if(this.scrollY >= 560) scrollup.classList.add('show-scrollup'); else scrollup.classList.remove('show-scrollup');
 }
 window.addEventListener('scroll',scrollup);
+
+// Dark light
+const themeButton = document.getElementById('tema-button');
+const darkTheme = 'dark-theme';
+const iconTheme = 'fa-sun';
+
+themeButton.addEventListener('click', () => {
+    document.body.classList.toggle(darkTheme)
+    themeButton.classList.toggle(iconTheme)
+})
