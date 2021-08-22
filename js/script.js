@@ -131,3 +131,10 @@ function scrollActive(){
     })
 }
 window.addEventListener('scroll',scrollActive);
+
+/* mudar o background do header */
+function scrollHeader(){
+    const nav = document.getElementById('header');
+    if(this.scrollY >= 80) nav.classList.add('show-scroll'); else nav.classList.remove('show-scroll');
+}
+window.addEventListener('scroll',scrollHeader);

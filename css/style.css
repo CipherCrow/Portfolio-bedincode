@@ -206,6 +206,11 @@ img{
     color: var(--primeira-cor);
 }
 
+/* Scroll header */
+.show-scroll{
+    box-shadow: 0 -1px 4px rgba(0,0,0,.15);
+}
+
 /* mostrar menu */
 .mostrar-menu{
     bottom: 0;
