@@ -858,3 +858,57 @@ img{
 ::-webkit-scrollbar-thumb:hover{
     background-color: var(--texto-cor-clara);
 }
+
+/* responsivo */
+
+/* pequenos */
+@media screen and (max-width:350px){
+    .container{
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+    .nav__menu{
+        padding: 2rem .25rem 4rem;
+    }
+    .nav__list{
+        column-gap: 0;
+    }
+    .home__content{
+        grid-template-columns: .25fr 3fr;
+    }
+    .home__blob{
+        width: 180px;
+    }
+    .habilidades__title{
+        font-size: var(--normal-font-size);
+    }
+    .qualificacao__data{
+        gap: .5rem;
+    }
+    .servicos__container{
+        grid-template-columns: max-content;
+        justify-content: center;
+    }
+    .servicos__content{
+        padding-right: 3.5rem;
+    }
+    .servicos__modal{
+        padding: 0 .5rem;
+    }
+    .projeto__img{
+        width: 200px;
+    }
+    .testemunho__data,
+    .testemunho__header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .testemunho__img{
+        margin-right: 0;
+        margin-bottom: var(--mb-0-25);
+    }
+    .testemunho__data,
+    .testemunho__description{
+        align-items: center;
+    }
+}
