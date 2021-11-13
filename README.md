@@ -16,4 +16,4 @@ O melhor projeto que encontrei. Com ele, aprendi a importância de classes mais 
 - [x] Finalizado
 - [x] Ao Ar
 
->GitHub-Pages: link aqui
+>GitHub-Pages: https://ciphercrow.github.io/Portfolio-bedincode/
